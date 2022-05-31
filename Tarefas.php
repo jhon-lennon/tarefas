@@ -41,6 +41,7 @@ if (!isset($_SESSION['usuario'])){
             //var nome = document.getElementById('nome').value;
             var nome = document.getElementById('perfil_query').innerText
             var link = document.getElementById('link').value;
+            var id_usuario = document.getElementById('id_user').value;
          
             var status = document.getElementById('status').value;
 
@@ -53,7 +54,7 @@ if (!isset($_SESSION['usuario'])){
         beforeSend: function enviar(){
           $("#resposta").html("<img src='load.gif' id='load'>");
         },
-        data: {perfil: perfil, usuario: usuario, nome: nome, link: link, status: status},
+        data: {perfil: perfil, usuario: usuario, nome: nome, link: link, status: status, id_user: id_usuario},
         success: function retornar(retorno) {
         console.log('Retorno de lista perfil:');
         
@@ -258,6 +259,8 @@ SELECT * FROM tb_perfis WHERE id_user ='". $_SESSION['id_user']."'");
                 
 
 <input type="hidden" id="usuario" name="usuario" value="<?= $_SESSION['usuario']?>">
+<input type="hidden" id="id_user" name="id_usuario" value="<?= $_SESSION['id_user']?>">
+
 <input id="nome" type="hidden" name="nome"
 value="<?= $array['nome']?>">
 <input id="link" type="hidden" name="link" value="<?=$array['link']?>">
