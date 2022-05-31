@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-image: url("imgs/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-radius: 0px 0px 50px 50px;
+ /* box-shadow: 1px 1px 1px 1px rgb(11, 120, 245);*/
+  
+}
+header img{
+  padding: 20px;
+  width: 320px;
+  margin-top: -50px;
+}
+header a{
+  position: relative;
+  left: 700px;
+  top: -50px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color:black;
+  border-radius: 60px 60px;
+  
+ 
+  
+}
+header a:hover{
+  color:white;
+  background-color: #005eff;
+ 
+
+}
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 20px;
+ 
+  
+
+}
+
+ .card_one{
+ background-color: white;
+ width: 250px;
+ height: 80px;
+ border-radius: 10px;
+ box-shadow: 1px 1px 4px 2px #0099ff;
+ display: flex;
+ flex-direction: row;
+}
+.card_one:hover{
+  background-color: #0099ff;
+  color:white;
+}
+.card_one p{
+  margin: 10px;
+  font-weight: 600;
+}
+.user{
+  width: 60px;
+  height: 60px;
+  background-color: #0099ff;
+  margin: 10px;
+  border-radius: 10px;
+}
+.user i{
+  margin: 22px;
+}
+
+.card_two{
+  background-color: white;
+ width: 250px;
+ height: 80px;
+ border-radius: 10px;
+ box-shadow: 1px 1px 4px 2px #0099ff;
+ display: flex;
+ flex-direction: row;
+}
+.card_two:hover{
+  background-color: #0099ff;
+  color:white;
+}
+.card_two p{
+  margin: 10px;
+  font-weight: 600;
+}
+.balance{
+  width: 60px;
+  height: 60px;
+  background-color: #0099ff;
+  margin: 10px;
+  border-radius: 10px;
+}
+.balance i{
+  margin: 22px;
+}
+.card_three{
+  background-color: white;
+ width: 250px;
+ height: 80px;
+ border-radius: 10px;
+ box-shadow: 1px 1px 4px 2px #0099ff;
+ display: flex;
+ flex-direction: row;
+}
+.card_three p{
+  margin: 10px;
+  font-weight: 600;
+}
+.card_three:hover{
+  background-color: #0099ff;
+  color:white;
+}
+.total{
+  width: 60px;
+  height: 60px;
+  background-color: #0099ff;
+  margin: 10px;
+  border-radius: 10px;
+}
+.total i{
+  margin: 22px;
+}
+
+.container{
+  width: 470px;
+  height: 450px;
+  background-color: white;
+  margin-left: 160px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 2px #0099ff;
+}
+.container h2{
+  box-shadow: 0px 1px #0099ff;
+  margin: 10px;
+}
+.options{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.options a{
+  padding: 12px;
+  margin: 10px;
+  background-color: #005eff;
+  color:white;
+  width: 200px;
+  border-radius: 50px;
+  text-decoration: none;
+
+}
+.options a:hover{
+  background-color: white;
+  color: #005eff;
+}
+.updates{
+  width: 500px;
+  height: 450px;
+  background-color: white;
+  margin-left: 680px;
+  margin-top: -450px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 2px #0099ff;
+  overflow-y: scroll;
+
+}
+.updates h2{
+  box-shadow: 0px 1px #0099ff;
+  margin: 10px;
+}
+.messages{
+  display: flex;
+  flex-direction: column;
+}
+.messages p, h3{
+  margin: 10px;
+}
+footer{
+ background-color: white;
+  top:1200px;
+  left: 0;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+  border-radius: 50px 50px 0px 0px;
+}
+footer p{
+  margin-left: 420px;
+}
+.h1_saque{
+  margin-left: 500px;
+  padding: 20px;
+}
+.list_payment{
+  display: flex;
+  flex-direction: row;
+}
+.container_payment{
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 120px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2em  gray;
+ }
+ .container_payment input[type="number"], input[type="text"] {
+   padding: 12px;
+   border-radius: 3px;
+   background-color: aliceblue;
+   border: none;
+ }
+ .container_payment input[type="submit"]{
+   padding: 10px;
+   border-radius: 7px;
+   border: none;
+   background-color: #005eff;
+   color: white;
+   font-weight: 600;
+ }
+
+ .container_payment input[type="submit"]:hover{
+  background-color: white;
+  color: #005eff;
+ }
+.container_payment button{
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(197, 197, 192);
+  font-weight: 600;
+}
+ .container_withdraw{
+  width: 500px;
+  height: 550px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2em  gray;
+  overflow-y: scroll;
+ }
+ .container_withdraw h3{
+  margin-top: 50px;
+ }
+.accounts{
+  margin-left: 550px;
+}
+.container_profile{
+  width: 600px;
+  height: 900px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 100px;
+  box-shadow: 0px 0px 2em gray;
+}
+.container_profile h2{
+  padding: 10px;
+  margin-left: 110px;
+}
+.container_profile ul li{
+  margin-left: 50px;
+  padding: 2px;
+}
+.container_profile form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container_profile input{
+  width: 300px;
+}
+.container_profile input[type="submit"]{
+padding: 10px;
+border-radius: 10px;
+border: none;
+background-color: #005eff;
+color: white;
+font-weight: 600;
+}
+.container_profile input[type="submit"]:hover{
+  background-color: white;
+color: #005eff;
+}
+.container_profile select{
+  width: 300px;
+  padding: 10px;
+border-radius: 10px;
+ background-color: aliceblue;
+}
+.container_profile p{
+  padding: 10px;
+}
+.profiles{
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 800px;
+  margin-top: -925px;
+  box-shadow: 0px 0px 2em gray;
+  overflow: scroll;
+
+}
+.profiles p{
+ margin-left: 10px;
+}
+.profiles a{
+  text-decoration: none;
+}
+
+@media (max-width: 600px){
+  body{
+    background-image: url("imgs/bg.jpeg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+  }
+
+  header{
+    width: 100%;
+    height: 140px;
+    background-color: white;
+    border-radius: 0px 0px 50px 50px;
+  
+  }
+  header a{
+    position: relative;
+    left: 100px;
+    top: -30px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color:black;
+    border-radius: 60px 60px;
+    
+   
+    
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    
+  
+  }
+  .card_one, .card_two, .card_three{
+    background-color: white;
+    width: 300px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 2px #0099ff;
+    display: flex;
+    flex-direction: row;
+   }
+
+  .container{
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    margin-left: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 2px #0099ff;
+  }
+
+  .updates{
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 2px #0099ff;
+    overflow-y: scroll;
+  
+  }
+  
+  .h1_saque{
+    margin-left: 100px;
+    color:white;
+    margin: 10px;
+  }
+  .list_payment{
+    display: flex;
+    flex-direction: column;
+  }
+  .container_payment{
+    width: 350px;
+    height: 630px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2em  gray;
+   }
+   .container_withdraw{
+    width: 350px;
+    height: 550px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2em  gray;
+    overflow-y: scroll;
+   }
+   .accounts{
+    margin-left: 35px;
+    color: white;
+    font-size: 25px;
+  }
+   .container_profile{
+    width: 350px;
+    height: 930px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 2em gray;
+  }
+  .container_profile h2{
+    padding: 10px;
+    margin-left: 50px;
+  }
+  .container_profile label{
+   margin-left: 5px;
+    
+  }
+  .profiles{
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 2em gray;
+    overflow: scroll;
+  
+  }
+  footer{
+  background-color: white;
+  top:1650px;
+  left: -0px;
+  height: 200px;
+  position: absolute;
+  width: 100%;
+  border-radius: 50px 50px 0px 0px;
+}
+footer p{
+  width: 80%;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+}
